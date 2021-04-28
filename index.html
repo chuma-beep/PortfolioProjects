@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="img/logo.png" class="logo">
+            <ul>
+            <li> <a href="">HOME</a></li>
+            <li> <a href="">ABOUT</a></li>
+            <li> <a href="">PHOTOS</a></li>
+            <li> <a href="">SERVICES</a></li>
+            <li> <a href="">CONTACT</a></li>
+        </ul>
+        <img src="img/moon.png" id="icon">
+    </nav>
+
+       <div class="info">
+           <h1> <span>Starry</span> Photos</h1>
+           <p>Lorem ipsum dolor sit,
+             amet consectetur adipisicing elit. Vero quos natus quam error?<br>
+             Nemo veniam in blanditiis voluptatum impedit iste.</p>
+             <a href="">See our Photos</a>
+       </div>
+       <div class="img-box">
+           <img src="img/back.jpg" class="back-img">
+           <img src="img/photo1.jpg" class="main-img">
+       </div>
+          <div class="social-links">
+             <a href=""><i class="fab fa-instagram"></i></a>
+             <a href=""><i class="fab fa-pinterest-square"></i></a>
+             <a href=""><i class="fab fa-twitter"></i></a>
+          </div>
+       </div>
+
+<script>
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "img/sun.png";
+        }else{
+            icon.src = "img/moon.png";
+        }
+    }
+</script>
+</body>
+</html>
