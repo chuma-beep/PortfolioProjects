@@ -16,6 +16,7 @@
 
 body{
     color: var(--primary-color);
+    border: navy;
 }
 
 #icon{
@@ -25,6 +26,9 @@ body{
 }
 
 .hero{
+    margin: 0 20px;
+    display: grid;
+    grid-gap:10px;
     height: 100vh;
     width:100%;
     background: var(--primary-color);
@@ -141,3 +145,40 @@ span{
 .social-links a:hover{
     color: #ff4321;
 }
+
+/*media queries*/
+@media only screen  and (max-width ) {
+    
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .info h1{
+      font-size: 50px;
+     }
+     .info{
+         max-width: 40% !important;
+     }
+     .img-box{
+         max-width: 50%;
+
+     }
+     .img-box:hover .back-img{
+        bottom: 70px;
+    }
+    .img-box .back-img{
+        size: 100px;
+    }
+   }
+  
+@media only screen and (max-width: 360px) {
+    .img-box{
+        position: relative;
+        margin: left 40px;
+     }
+   .info h1{
+     font-size: 30px;
+     position: relative;
+    }
+  }
+ 
